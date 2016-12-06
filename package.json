@@ -1,0 +1,76 @@
+{
+  "name": "angularjs-common",
+  "version": "0.1.0",
+  "description": "Front-end common module for angularjs project",
+  "main": "./dist/angularjs-common.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swlee60/angularjs-common"
+  },
+  "author": "swlee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swlee60/angularjs-common/issues"
+  },
+  "homepage": "https://github.com/swlee60/angularjs-common",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-resource": "^1.5.9",
+    "angular-scenario": "^1.5.8",
+    "autoprefixer": "^6.0.3",
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.7.1",
+    "isparta-loader": "^2.0.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^1.1.0",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.7.0",
+    "node-libs-browser": "^1.0.0",
+    "null-loader": "^0.1.1",
+    "phantomjs-prebuilt": "^2.1.4",
+    "postcss-loader": "^0.9.1",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.1",
+    "standard": "^8.5.0",
+    "standard-loader": "^5.0.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "global": [
+      "angular",
+      "_",
+      "IScroll",
+      "phup",
+      "alert",
+      "Image"
+    ],
+    "ignore": [
+      "e2e/**",
+      "client/bower_components/**",
+      "karma.conf.js",
+      "mocha.conf.js",
+      "client/app/app.constant.js",
+      "client/components/directives/mg-nclicks/nclicks.service.js",
+      "webpack.config.js"
+    ]
+  }
+}
